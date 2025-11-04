@@ -33,3 +33,4 @@ Revised_data/fig3-traj-vel-srd1/PS8023_C_him-5_male_10_20_100%_revised10_vonly.p
 Revised_data/fig3-traj-vel-srd1/PS9478_C_Him-5_male_10_20_100%_Revised14_vonly.png
 
 The expected runtime on a normal computer is a few seconds.
+The content of this repository is available under the Creative Commons Attribution-Noncommercial-ShareAlike license (CC BY-NC-SA 4.0).

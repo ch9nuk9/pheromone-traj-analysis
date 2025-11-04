@@ -7,6 +7,9 @@ prefix_arr = {[path,'PS9478_C_Him-5_male_10_20_100%_Revised'],...
 [path,'PS9478_C_Him-5_herm_10_20_100%_Revised']}
 correction_factor = 25/4.4;
 
+duration = {12.5, 11};
+tstim_arr = {-20, -25};
+
 for id_prefix=1:length(prefix_arr)
     prefix = prefix_arr{id_prefix}
     fname = [prefix,'.xlsx'];
@@ -71,8 +74,9 @@ for id_prefix=1:length(prefix_arr)
     save(dataname)
     
     % tstim1 = floor(5/dt0);
-    tstim1 = 0;
-    tendstim1 = tstim1+floor(10/dt0);
+    tstim1 = tstim_arr{id_prefix};
+    dur = duration{id_prefix};
+    tendstim1 = tstim1+floor(dur/dt0);
     tperiod = 2*floor(10/dt0);
     Nstim = floor(length(t)/tperiod)
     
